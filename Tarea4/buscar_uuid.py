@@ -6,26 +6,26 @@
 # El UUID de la laptop SHC92502EBF es CAF15C1B-5CEF-476A-B467-841B9888AC1C
 
 import sys
+#try:
+#	entrada = sys.argv[1]
+#except IndexError:
+#	print "No se ingreso nada"
+#	sys.exit(1)
+if len(sys.argv) != 2:
+    print "eeror"
+    sys.exit(1)
+    
+entrada=sys.argv[1]
+if len(entrada) != 11:
+    print "Error...\n Debes ingregar bien el SERIAL DE LA XO..."
+    sys.exit(1)
 
-#entrada = sys.argv[1]
-
-if len(sys.argv) == 2:
-        print sys.argv[1]
-else:
-        print "debe ingresar algo..."
-
-
-bd = open("/home/german/Escritorio/pyton/uuid.txt", "r")
-
+bd = open("uuid.txt", "r")
 for linea in bd:
-# while linea:
     linea = linea.strip()
-#    print linea
     if entrada == linea[0:11]:
-        print "El UUID de la laptop %s: es %s" % (entrada,linea[12:47])
+        print "El UUID de la laptop %s: es %s" % (entrada,linea[12:])
         break
 else:
     print "No se encontro"
-
 bd.close()
-
