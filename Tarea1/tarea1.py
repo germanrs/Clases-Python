@@ -1,4 +1,3 @@
-# Test
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Como te llamas? Daniel
@@ -10,5 +9,4 @@ try:
     print 'En tu proximo cumpleaños tendras: %d años ' % (edad+1)
 except ValueError:
     print 'Ese no es una edad, adios...'
-
-# testing a new feature
+print 'german'
