@@ -13,7 +13,7 @@
 # 64
 # 81
 # 100
-#
+# random
 import random
 
 numero_aleatorio = random.randint(1,10)
