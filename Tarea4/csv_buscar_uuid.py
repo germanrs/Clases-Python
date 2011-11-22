@@ -16,7 +16,7 @@ if len(entrada) != 11:
     print "Deben ingresar bien el serial..."
     sys.exit(1)
 
-archivo = open('uuid.csv', 'rb')
+archivo = open('uuid.txt', 'rb')
 archivo_csv = csv.reader(archivo)
 
 for columna in archivo_csv:
